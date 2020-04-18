@@ -21,7 +21,7 @@ public class DepositEventsController {
 	@Autowired DepositEventProducer depositEventProducer;
 	private @Autowired ITransactionService transactionService;
 	
-	@PostMapping("/v1/depositEvent")
+	@PostMapping("/v1/deposit-event")
 	public ResponseEntity<Transaction> postLibraryEvent(@RequestBody Transaction transactionEvent)
 		throws JsonProcessingException {
 		LOGGER.info("antes sendDepositEvent_Approach3");
